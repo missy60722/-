@@ -162,3 +162,9 @@ input[type="checkbox"]{
     height: 22px;
     cursor: pointer;
 }
+.situation a{
+    color: rgb(57, 120, 133);
+}
+.situation a:hover{
+    color: rgb(57, 75, 133);
+}
