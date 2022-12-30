@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html iang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <link rel = "stylesheet" type = "text/css" href = "register.css"/>
+        <script src = "register.js"></script>
+        <title>register</title>
+    </head>
+    <body>
+        <div class = "Title">
+            <h1>點餐系統</h1>
+        </div>
+        <div class = "Register">
+            <h2 class = "register">Sign&nbsp;Up</h2>
+            <form class = "form_register" action = "login.html" method = "post" onsubmit="return check()">
+                <label>User name
+                    <input type = "text" id = "username" maxlength = "10">
+                </label><br>
+                <label>Email<br>
+                    <input type = "email" id = "mail">
+                </label><br>
+                <label>Password
+                    <input type = "password" id = "password1">
+                </label><br>
+                <label>Confirm password
+                    <input type = "password" id = "password2">
+                </label><br>
+                <label>Identity</label><br>
+                <label><input type = "radio" value = "Manager" name= "identity">Manager</label>
+                <label><input type = "radio" value = "Staff" name = "identity">Staff</label>
+                <label><input type = "radio" value = "Chef" name = "identity">Chef</label>
+                <p><input type = "submit" value = "Login"></p>
+                <p><input type = "submit" value = "Creat" ></p>
+            </form>
+        </div>
+    </body>
+</html>
