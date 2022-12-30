@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <link rel = "stylesheet" type = "text/css" href = "employee.css"/>
+        <script src = "employee.js"></script>
+        <title>employee1</title>
+    </head>
+    <body> 
+        <nav>
+            <label for = "switch"><img src = "/Users/missy/大二上/軟體工程/軟體工程/burger.png"></label>
+            <h1>員工檔案</h1>
+            <input type = "checkbox" id = "switch">
+            <ul class = "menu">
+                <li><a href = "/Users/missy/大二上/軟體工程/軟體工程/Manager/manager.html">首頁</a></li>
+                <li><a href = "/Users/missy/大二上/軟體工程/軟體工程/Manager/Inventory Management/inventory.html">庫存追蹤</a></li>
+                <li><a href = "##">修改桌子數量</a></li>
+                <li><a href = "/Users/missy/大二上/軟體工程/軟體工程/Manager/Sales Analysis/analysis.html">銷售分析</a></li>
+            </ul>
+        </nav>
+        <div style = "height: 100px; width: 100%;"></div>
+        <div class = "employee">
+            <a href = "employee1.html">員工1</a>
+            <div class = "button">
+                <button type="button" id = "new" onclick = "newEmployee()">創建</button><button type="button" id = "modify" onclick = "modifyEmployee()">修改</button>
+            </div>
+        </div>
+        <table id = "table_employee" rules = "all">
+            <tbody>
+                <tr>
+                    <td colspan = "4" height = "90px">姓名：<span id = "name">員工1</span></td>
+                    <td colspan = "6" height = "90px">身分證字號：<span id = "id">A123456789</span></td>
+                </tr>
+                <tr>
+                    <td colspan = "10" height = "90px">職位：<span id = "identity">服務生</span></td>
+                </tr>
+                <tr>
+                    <td colspan = "10" class = "situation">負責區域：
+                        <div>
+                            <label><span>1</span>號桌<input type="checkbox" id="first"></label>&nbsp;&nbsp;<a href = "/Users/missy/大二上/軟體工程/軟體工程/Staff/deskStep3.html">帳單</a><br>
+                            <label><span>2</span>號桌<input type="checkbox" id="first"></label>&nbsp;&nbsp;<a href = "/Users/missy/大二上/軟體工程/軟體工程/Staff/deskStep3.html">帳單</a><br>
+                            <label><span>3</span>號桌<input type="checkbox" id="first"></label>&nbsp;&nbsp;<a href = "/Users/missy/大二上/軟體工程/軟體工程/Staff/deskStep3.html">帳單</a><br>
+                            <label><span>4</span>號桌<input type="checkbox" id="first"></label>&nbsp;&nbsp;<a href = "/Users/missy/大二上/軟體工程/軟體工程/Staff/deskStep3.html">帳單</a><br>
+                            <label><span>5</span>號桌<input type="checkbox" id="first"></label>&nbsp;&nbsp;<a href = "/Users/missy/大二上/軟體工程/軟體工程/Staff/deskStep3.html">帳單</a><br>
+                        </div>
+                        員工狀態：<span id = "state">忙碌</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id = "background"></div>
+        <div id = "adjust" name = "adjust">
+            <div class = "name">
+                <label>姓名：<br>
+                    <input type = "text" name = "name">
+                </label><br>
+            </div>
+            <div class = "id">
+                <label>身分證字號：<br>
+                    <input type = "text" name = "id">
+                </label><br>
+            </div>
+            <div class = "identity">
+                <label>職位：<br>
+                    <input type = "text" name = "identity">
+                </label><br>
+            </div><br>
+            <div class = "state">
+                <label>狀態：
+                    <select>
+                        <option value="0">忙碌</option>
+                        <option value="1">空閒</option>
+                    </select>
+                </label><br>
+            </div><br>
+            <div class = "adjust_button">
+                <input type = "button" value = "取消" id = "cancel">
+                <input type = "button" value = "確定" id = "confirm" name = "confirm">
+            </div>               
+        </div>
+        <div id="down"></div>
+    </body>
+</html>

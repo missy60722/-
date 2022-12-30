@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <link rel = "stylesheet" type = "text/css" href = "login.css"/>
+        <script src = "login.js"></script>
+        <title>login</title>
+    </head>
+    <body> 
+        <div class = "Title">
+            <h1>點餐系統</h1>
+        </div>
+        <div class = "Login">
+            <h2 class = "login">Sign&nbsp;In</h2>
+            <form id = "form_login" method = "post" onsubmit="return check()">
+                <label for = "username">User name
+                    <input type = "text" id = "username" maxlength = "10">
+                </label><br>
+                <label for = "password1">Password
+                    <input type = "password" id = "password1" >
+                </label><br>
+                <label>Identity</label><br>
+                <label><input type = "radio" value = "Manager" name= "identity">Manager</label>
+                <label><input type = "radio" value = "Staff" name = "identity">Staff</label>
+                <label><input type = "radio" value = "Chef" name = "identity">Chef</label>
+                <p><input type = "submit" value = "Login"></p>
+            </form>
+        </div>
+        <div class = Sign>
+            <a href = "register.html" target = "_self"><b>註冊</b></a>
+            <a href = "forget.html" target = "_self"><b>忘記密碼</b></a>
+        </div>
+    </body>
+</html>
