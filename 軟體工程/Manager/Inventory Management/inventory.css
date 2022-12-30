@@ -90,12 +90,13 @@ input:checked ~ .menu{
     font-size: 30px;
     line-height: 80px;
 }
-a:hover{
+.section a:hover{
     color: #006eff;
     background-color: rgb(249, 198, 70);
 }
 .iventory{
     position: relative; 
+    top: 80px;
     width: 100%;
     height: 78%;
     box-sizing: border-box;
