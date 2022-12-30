@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <link rel = "stylesheet" type = "text/css" href = "deskStep1.css"/>
+        <script src = "desk.js"></script>
+        <title>desk</title>
+    </head>
+    <body>
+        <div class = "deskNum">
+            <p><span id = "deskNum"></span>號桌</p>
+        </div>
+        <div class = "header1">
+            <a href = "deskStep1.html">點餐</a>
+        </div>
+        <div class = "header2">
+            <a href = "deskStep3.html">帳單</a>
+        </div>
+        <div class = "meal">
+            <button type = "button" id = "firstMeal" onclick="get(this)"><img src = "/Users/missy/大二上/軟體工程/軟體工程/比目魚邊鰭海鮮丼 260元.png"><br>比目魚邊鰭海鮮丼 260元</button>
+            <button type = "button" id = "secondMeal" onclick="get(this)"><img src = "/Users/missy/大二上/軟體工程/軟體工程/海天松葉蟹雜炊 260元.png"><br>海天松葉蟹雜炊260元</button>
+            <button type = "button" id = "thirdMeal" onclick="get(this)"><img src = "/Users/missy/大二上/軟體工程/軟體工程/秘傳赤醬唐揚雞拉麵 200元.png"><br>秘傳赤醬唐揚雞拉麵 200元</button>
+        </div>
+        <div style = "height: 200px;"></div>
+        <div class = "bottom">
+            <label for = "cancel" class = "C"><img src="/Users/missy/大二上/軟體工程/軟體工程/right-arrow.png">取消</label>
+            <input type="checkbox" id="cancel" onclick = "checkCancel1()" >
+            <div class = "count">
+            共 <span id = "num"></span> 項餐點&nbsp;&nbsp;&nbsp;&nbsp;共計 <span id = "sum"></span> 元
+            </div>
+            <label for = "determine" class = "D">確定<img src="/Users/missy/大二上/軟體工程/軟體工程/right-arrow.png"></label>
+            <input type="checkbox" id="determine" onclick = "checkDetermine()" >
+        </div>
+    </body>
+</html>
