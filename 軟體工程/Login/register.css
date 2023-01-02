@@ -1,0 +1,84 @@
+html{
+    font-family: Copperplate;
+    font-size: 28px;
+}
+html, body{
+    background-color: #e3dcd2;
+    width:100%;
+    height: 100%;
+}
+body{   /*box設定*/
+    background-color:#ffffff;
+    border-radius: 5px;
+    border:0;
+    width:430px;
+    height:575px;
+    padding:30px 0;
+    box-sizing:border-box;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    position:absolute;
+    top:53%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+.Title{     /*Buy Together*/
+    font-size: 25px;
+    position:absolute;
+    top:-9%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+.Register{
+    text-align: center;
+}
+.register{  /*Sign Up*/
+    color: #026670;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0 0 2% 0;
+}
+
+label{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type = "email"]{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border:0;
+    background-color: #e3dcd2;
+    margin: 10px;
+}
+
+input[type = "text"]{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border:0;
+    background-color: #e3dcd2;
+    margin: 10px;
+}
+input[type = "password"]{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border:0;
+    background-color: #e3dcd2;
+    margin: 10px;
+}
+input[type = "submit"]{
+    background-color: #026670;
+    border-radius: 5px;
+    border:0;
+    width: 100px;
+    height: 40px;
+    align-items: center;
+    cursor:pointer;
+    color: rgb(255, 255, 255);    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+}
